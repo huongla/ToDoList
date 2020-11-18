@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>To Do List</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FONT GOOGLE -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-4 mx-auto mt-5">
+            <div class="toDoList">
+                <div class="toDoList__image">
+                    <img src="../assets/img/image02.jpg" alt="">
+                    <div class="toDoList__icon">
+                        <i class="fa fa-filter"></i>
+                    </div>
+                </div>
+                <div class="toDoList__content">
+                    <div class="div mx-3 py-2">
+                        <h4>My Tasks</h4>
+                        <p>February 8, 2015</p>
+                      
+                        <div class="input-group mb-2 toDoList__input">
+                            <input type="text" id="task__Name" class="form-control" placeholder="Enter your activity" aria-label="Activity"
+                                aria-describedby="basic-addon1">
+                            <div class="input-group-prepend align-middle" id="btnAddTask">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <h5 id="err_taskName_checkNull" class="text-danger mb-0 text-center"></h5>
+
+                        <div class="mt-5" id="toDoList__pending"> </div>                   
+                        
+
+                        <div class="mt-5" id="toDoList__done"> </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Model -->
+    <script src="../models/Tasks.js"></script>
+    <script src="../models/Validation.js"></script>
+    <!-- Controllers -->
+    <script src="../controllers/index.js"></script>
+
+</body>
+
+</html>
